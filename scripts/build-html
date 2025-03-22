@@ -1,0 +1,10 @@
+#!/bin/bash
+
+cd source/
+htlatex index.tex "xhtml,html5,mathml,charset=utf-8" " -cunihtf -utf8"
+
+rm -rf *.aux *.4ct *.4tc *.dvi *.idv *.lg *.log *.tmp *.xref *.xref *.out *.toc *.synctex.gz
+rm -rf **/*.aux
+
+mv index.html ../html/index.html
+mv index.css ../html/index.css

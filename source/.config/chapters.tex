@@ -1,0 +1,48 @@
+\definecolor{gray75}{gray}{0.75}
+\newcommand{\hsp}{\hspace{20pt}}
+\titleformat{\chapter}[hang]{\Huge\bfseries}{\thechapter\hsp\textcolor{gray75}{|}\hsp}{0pt}{\Huge\bfseries}
+\titlespacing*{\chapter}{0pt}{10pt}{40pt}
+\let\Chaptermark\chaptermark
+\def\chaptermark#1{\def\Chaptername{#1}\Chaptermark{#1}}
+\let\Sectionmark\sectionmark
+\def\sectionmark#1{\def\Sectionname{#1}\Sectionmark{#1}}
+\let\Subsectionmark\subsectionmark
+\def\subsectionmark#1{\def\Subsectionname{#1}\Subsectionmark{#1}}
+\let\Subsubsectionmark\subsubsectionmark
+\def\subsubsectionmark#1{\def\Subsubsectionname{#1}\Subsubsectionmark{#1}}
+\renewcommand{\chaptermark}[1]{\markboth{#1}{#1}}
+%\newcommand*{\currentname}{\@currentlabelname}
+\setlength{\headheight}{14.49998pt}
+
+\makeatletter
+\long\def\@makecaption#1#2{%
+    \vskip\abovecaptionskip
+    \begin{center}\textbf{#1 :} #2\par\end{center}
+    \vskip\belowcaptionskip}%
+\AtBeginDocument{%
+    \renewcommand\lstlistlistingname{Listingverzeichnis}
+    \let\c@algocf\c@lstlisting
+    \renewcommand{\algocf@list}{lol}%
+    \renewcommand*\l@algocf{\@dottedtocline{1}{1.5em}{2.3em}}
+    \counterwithout{figure}{chapter}
+    \counterwithout{lstlisting}{chapter}
+    \counterwithout{equation}{chapter}
+}
+\def\@chapter[#1]#2{\ifnum \c@secnumdepth >\m@ne
+        \refstepcounter{chapter}%
+        \typeout{\@chapapp\space\thechapter.}%
+        \addcontentsline{toc}{chapter}%
+        {\protect\numberline{\thechapter}#1}%
+    \else
+        \addcontentsline{toc}{chapter}{#1}%
+    \fi
+    \chaptermark{#1}%
+    %                    \addtocontents{lof}{\protect\addvspace{10\p@}}% 
+    \addtocontents{lot}{\protect\addvspace{10\p@}}%
+    \if@twocolumn
+        \@topnewpage[\@makechapterhead{#2}]%
+    \else
+        \@makechapterhead{#2}%
+        \@afterheading
+    \fi}
+\makeatother

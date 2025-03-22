@@ -6,15 +6,13 @@
         {
             "label": "Build html",
             "type": "shell",
-            "command": "pandoc",
-            "args": [
-                "${workspaceFolder}/source/index.tex",
-                "-o",
-                "${workspaceFolder}/render/html/index.html",
-                "--standalone",
-                "--number-sections",
-                "--toc"
-            ],
+            "windows": {
+                "command": "scripts\\build-html.bat"
+            },
+            "command": "./scripts/build-html",
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
             "problemMatcher": [],
             "presentation": {
                 "reveal": "never"

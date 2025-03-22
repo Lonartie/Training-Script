@@ -1,0 +1,9 @@
+*.aux
+*.log
+*.synctex.gz
+*.toc
+*.4tc
+*.dvi
+*.tmp
+*.xref
+*.4ct
