@@ -1,11 +1,11 @@
 \newcommand*\cleartoleftpage{%
     \clearpage
-    \ifodd\value{page}\hbox{}\newpage\fi
+    \ifodd\value{page}\hbox{}\newpage\clearpage\fi
 }
 
 \newcommand*\cleartorightpage{%
     \clearpage
-    \ifodd\else\value{page}\hbox{}\newpage\fi
+    \ifodd\value{page}\else\hbox{}\newpage\fi
 }
 
 \newcommand{\getenv}[2][]{%
