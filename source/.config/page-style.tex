@@ -46,3 +46,11 @@
         \@afterheading
     \fi}
 \makeatother
+
+\pretocmd{\chapter}{\cleartoleftpage}{}{}
+\newif\ifnotfirstsection
+\pretocmd{\chapter}{\notfirstsectionfalse}{}{}
+\pretocmd{\section}{\ifnotfirstsection\clearpage\fi \notfirstsectiontrue}{}{}
+\newif\ifnotfirstsubsection
+\pretocmd{\section}{\notfirstsubsectionfalse}{}{}
+\pretocmd{\subsection}{\ifnotfirstsubsection\clearpage\fi \notfirstsubsectiontrue}{}{}
