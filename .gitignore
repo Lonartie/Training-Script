@@ -7,3 +7,6 @@
 *.tmp
 *.xref
 *.4ct
+*.pdf
+*.html
+*.css
