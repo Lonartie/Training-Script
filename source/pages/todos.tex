@@ -5,8 +5,26 @@
 
 \cleardoublepage\chapter{\textcolor{red}{Basics}}\label{chap:basics}
 \section{\textcolor{red}{Main-Methode}}\label{sec:main-method}
+\section{\textcolor{red}{Kommentare}}\label{sec:comments}
 \section{\textcolor{red}{Variablen}}\label{sec:variables}
+\subsection{\textcolor{red}{Deklaration und Initialisierung}}\label{sec:declaration-initialization}
+\subsection{\textcolor{red}{Konstanten}}\label{sec:constants}
+\subsection{\textcolor{red}{Scope und Lebensdauer}}\label{sec:scope-lifetime}
+\subsection{\textcolor{red}{Initialisierungslisten}}\label{sec:initializer-lists}
 \section{\textcolor{red}{Datentypen}}\label{sec:datatypes}
+\subsection{\textcolor{red}{Primitive Datentypen}}\label{sec:primitive-datatypes}
+\subsection{\textcolor{red}{Typumwandlung}}\label{sec:type-conversion}
+\subsection{\textcolor{red}{Auto-Keyword}}\label{sec:auto-keyword}
+\subsection{\textcolor{red}{Auto-Typinferenz}}\label{sec:auto-type-inference}
+\section{\textcolor{red}{Operatoren}}\label{sec:operators}
+\subsection{\textcolor{red}{Arithmetische Operatoren}}\label{sec:arithmetic-operators}
+\subsection{\textcolor{red}{Vergleichsoperatoren}}\label{sec:comparison-operators}
+\subsection{\textcolor{red}{Logische Operatoren}}\label{sec:logical-operators}
+\subsection{\textcolor{red}{Bitweise Operatoren}}\label{sec:bitwise-operators}
+\subsection{\textcolor{red}{Zuweisungsoperatoren}}\label{sec:assignment-operators}
+\subsection{\textcolor{red}{Three-Way Comparison (Spaceship Operator)}}\label{sec:spaceship-operator}
+\section{\textcolor{red}{Ein- und Ausgabe}}\label{sec:input-output}
+\subsection{\textcolor{red}{Konsolen-Ein-/Ausgabe}}\label{sec:console-io}
 
 \cleardoublepage\chapter{\textcolor{red}{Control-Flow - Teil 1}}\label{chap:control-flow-1}
 \section{\textcolor{red}{Schleifen}}\label{sec:loops}
@@ -19,6 +37,17 @@
 \section{\textcolor{red}{Bedingungen}}\label{sec:conditions}
 \subsection{\textcolor{red}{If-Bedingung}}\label{sec:if-condition}
 \subsection{\textcolor{red}{Switch}}\label{sec:switch}
+\subsection{\textcolor{red}{If mit Initialisierung}}\label{sec:if-with-initialization}
+
+\cleardoublepage\chapter{\textcolor{red}{Control-Flow - Teil 2}}\label{chap:control-flow-2}
+\section{\textcolor{red}{Goto}}\label{sec:goto}
+\section{\textcolor{red}{Lambda-Ausdrücke}}\label{sec:lambda-expressions}
+\subsection{\textcolor{red}{Grundlagen}}\label{sec:lambda-basics}
+\subsection{\textcolor{red}{Generische Lambdas}}\label{sec:generic-lambdas}
+\section{\textcolor{red}{Funktionspointer}}\label{sec:function-pointers}
+\section{\textcolor{red}{std::function}}\label{sec:std-function}
+\section{\textcolor{red}{Callbacks}}\label{sec:callbacks}
+\section{\textcolor{red}{Coroutinen}}\label{sec:coroutines}
 
 \cleardoublepage\chapter{\textcolor{red}{Debugging}}\label{chap:debugging}
 \section{\textcolor{red}{Release vs. Debug}}\label{sec:release-vs-debug}
@@ -32,25 +61,96 @@
 \subsection{\textcolor{red}{Autos}}\label{sec:autos}
 
 \cleardoublepage\chapter{\textcolor{red}{Speicher - Teil 1}}\label{chap:memory-1}
+\section{\textcolor{red}{Stack vs. Heap}}\label{sec:stack-vs-heap}
+\section{\textcolor{red}{Pointer}}\label{sec:pointers}
+\subsection{\textcolor{red}{Pointer-Arithmetik}}\label{sec:pointer-arithmetic}
+\subsection{\textcolor{red}{Null-Pointer}}\label{sec:null-pointer}
+\subsection{\textcolor{red}{nullptr}}\label{sec:nullptr}
+\subsection{\textcolor{red}{Void-Pointer}}\label{sec:void-pointer}
+\section{\textcolor{red}{Referenzen}}\label{sec:references}
+\subsection{\textcolor{red}{Lvalue-Referenzen}}\label{sec:lvalue-references}
+\subsection{\textcolor{red}{Rvalue-Referenzen}}\label{sec:rvalue-references}
+\section{\textcolor{red}{Move-Semantik}}\label{sec:move-semantics}
+\section{\textcolor{red}{Dynamische Speicherverwaltung}}\label{sec:dynamic-memory}
+\subsection{\textcolor{red}{new und delete}}\label{sec:new-delete}
+\subsection{\textcolor{red}{new[] und delete[]}}\label{sec:new-delete-array}
+\subsection{\textcolor{red}{Memory Leaks}}\label{sec:memory-leaks}
+\section{\textcolor{red}{Smart Pointer}}\label{sec:smart-pointers}
+\subsection{\textcolor{red}{unique\_ptr}}\label{sec:unique-ptr}
+\subsection{\textcolor{red}{shared\_ptr}}\label{sec:shared-ptr}
+\subsection{\textcolor{red}{weak\_ptr}}\label{sec:weak-ptr}
+\section{\textcolor{red}{Speicherlayout}}\label{sec:memory-layout}
+\subsection{\textcolor{red}{Alignment}}\label{sec:alignment}
+\subsection{\textcolor{red}{Padding}}\label{sec:padding}
+
+\cleardoublepage\chapter{\textcolor{red}{Speicher - Teil 2}}\label{chap:memory-2}
+\section{\textcolor{red}{Memory Management Strategien}}\label{sec:memory-management-strategies}
+\section{\textcolor{red}{Custom Allocators}}\label{sec:custom-allocators}
+\section{\textcolor{red}{Memory Pools}}\label{sec:memory-pools}
+\section{\textcolor{red}{Garbage Collection in C++}}\label{sec:garbage-collection}
+\section{\textcolor{red}{Memory Profiling und Debugging}}\label{sec:memory-profiling}
+\section{\textcolor{red}{Memory Optimierungstechniken}}\label{sec:memory-optimization}
+
+\cleardoublepage\chapter{\textcolor{red}{Namespaces und Präprozessor}}\label{chap:namespaces-preprocessor}
+\section{\textcolor{red}{Namespaces}}\label{sec:namespaces}
+\subsection{\textcolor{red}{Namespace-Definition}}\label{sec:namespace-definition}
+\subsection{\textcolor{red}{Using-Direktive}}\label{sec:using-directive}
+\subsection{\textcolor{red}{Using-Deklaration}}\label{sec:using-declaration}
+\subsection{\textcolor{red}{Namespace-Aliase}}\label{sec:namespace-aliases}
+\section{\textcolor{red}{Präprozessor-Direktiven}}\label{sec:preprocessor}
+\subsection{\textcolor{red}{include}}\label{sec:include}
+\subsection{\textcolor{red}{define}}\label{sec:define}
+\subsection{\textcolor{red}{Bedingte Kompilierung}}\label{sec:conditional-compilation}
+\subsection{\textcolor{red}{Makros}}\label{sec:macros}
+\subsection{\textcolor{red}{Pragma-Direktiven}}\label{sec:pragma}
+\section{\textcolor{red}{Modules}}\label{sec:modules}
 
 \cleardoublepage\chapter{\textcolor{red}{Compiler vs. Interpreter}}\label{chap:compiler-vs-interpreter}
 \section{\textcolor{red}{Compiler}}\label{sec:compiler}
+\subsection{\textcolor{red}{Kompilierungsprozess}}\label{sec:compilation-process}
+\subsection{\textcolor{red}{Linker}}\label{sec:linker}
+\subsection{\textcolor{red}{Objektdateien}}\label{sec:object-files}
 \section{\textcolor{red}{Interpreter}}\label{sec:interpreter}
+\section{\textcolor{red}{C++ Sprachstandards}}\label{sec:cpp-standards}
+\subsection{\textcolor{red}{Überblick der Standards (C++98 bis C++23)}}\label{sec:standards-overview}
+\subsection{\textcolor{red}{Compiler-Unterstützung}}\label{sec:compiler-support}
+
+\cleardoublepage\chapter{\textcolor{red}{Funktionen}}\label{chap:functions}
+\section{\textcolor{red}{Deklaration und Definition}}\label{sec:function-declaration-definition}
+\section{\textcolor{red}{Parameter}}\label{sec:function-parameters}
+\subsection{\textcolor{red}{Wertparameter}}\label{sec:value-parameters}
+\subsection{\textcolor{red}{Referenzparameter}}\label{sec:reference-parameters}
+\subsection{\textcolor{red}{Konstante Parameter}}\label{sec:const-parameters}
+\section{\textcolor{red}{Rückgabewerte}}\label{sec:return-values}
+\section{\textcolor{red}{Überladung}}\label{sec:function-overloading}
+\section{\textcolor{red}{Default-Argumente}}\label{sec:default-arguments}
+\section{\textcolor{red}{Inline-Funktionen}}\label{sec:inline-functions}
+\section{\textcolor{red}{Rekursion}}\label{sec:recursion}
+\section{\textcolor{red}{Return Type Deduction}}\label{sec:return-type-deduction}
 
 \cleardoublepage\chapter{\textcolor{red}{Datenstrukturen - Teil 1}}\label{chap:datastructures-1}
 \section{\textcolor{red}{Einfache \textit{Structs}}}\label{sec:structs}
 \section{\textcolor{red}{Arrays}}\label{sec:arrays}
 \section{\textcolor{red}{Strings}}\label{sec:strings}
+\section{\textcolor{red}{Structured Bindings}}\label{sec:structured-bindings}
 \section{\textcolor{red}{Klassen}}\label{sec:classes}
 \subsection{\textcolor{red}{Variablen}}\label{sec:class-variables}
 \subsection{\textcolor{red}{Methoden}}\label{sec:class-methods}
 
-\cleardoublepage\chapter{\textcolor{red}{Exceptions}}\label{chap:exceptions}
+\cleardoublepage\chapter{\textcolor{red}{Fehlerbehandlung}}\label{chap:error-handling}
 \section{\textcolor{red}{Exceptions}}\label{sec:exceptions}
 \subsection{\textcolor{red}{Throw}}\label{sec:throw}
 \subsection{\textcolor{red}{Try-Catch}}\label{sec:catch}
 \subsection{\textcolor{red}{Exception-Handling}}\label{sec:exception-handling}
+\subsection{\textcolor{red}{Standard-Exceptions}}\label{sec:standard-exceptions}
+\subsection{\textcolor{red}{Eigene Exceptions}}\label{sec:custom-exceptions}
 \subsection{\textcolor{red}{Best Practices}}\label{sec:best-practices}
+\section{\textcolor{red}{Fehler-Codes}}\label{sec:error-codes}
+\section{\textcolor{red}{Assertions}}\label{sec:assertions}
+\subsection{\textcolor{red}{Static Assertions}}\label{sec:static-assertions}
+\subsection{\textcolor{red}{Runtime Assertions}}\label{sec:runtime-assertions}
+\section{\textcolor{red}{Expected/Optional Pattern}}\label{sec:expected-optional}
+\section{\textcolor{red}{Logging}}\label{sec:logging}
 
 \cleardoublepage\chapter{\textcolor{red}{Datenstrukturen - Teil 2}}\label{chap:datastructures-2}
 \section{\textcolor{red}{Klassen}}\label{sec:classes-2}
@@ -68,3 +168,103 @@
 \subsection{\textcolor{red}{Graphen}}\label{sec:trees}
 \subsection{\textcolor{red}{Binärbäume}}\label{sec:binary-trees}
 
+\cleardoublepage\chapter{\textcolor{red}{Templates}}\label{chap:templates}
+\section{\textcolor{red}{Funktions-Templates}}\label{sec:function-templates}
+\section{\textcolor{red}{Klassen-Templates}}\label{sec:class-templates}
+\section{\textcolor{red}{Template-Spezialisierung}}\label{sec:template-specialization}
+\section{\textcolor{red}{Variadic Templates}}\label{sec:variadic-templates}
+\section{\textcolor{red}{SFINAE}}\label{sec:sfinae}
+\section{\textcolor{red}{Variable Templates}}\label{sec:variable-templates}
+\section{\textcolor{red}{Fold Expressions}}\label{sec:fold-expressions}
+\section{\textcolor{red}{Concepts}}\label{sec:concepts}
+
+\cleardoublepage\chapter{\textcolor{red}{C++ Standard Library}}\label{chap:standard-library}
+\section{\textcolor{red}{Überblick}}\label{sec:std-lib-overview}
+\section{\textcolor{red}{Container}}\label{sec:std-containers}
+\subsection{\textcolor{red}{Sequenz-Container}}\label{sec:sequence-containers}
+\subsection{\textcolor{red}{Assoziative Container}}\label{sec:associative-containers}
+\subsection{\textcolor{red}{Ungeordnete Container}}\label{sec:unordered-containers}
+\subsection{\textcolor{red}{Container-Adapter}}\label{sec:container-adapters}
+\section{\textcolor{red}{Iteratoren}}\label{sec:iterators}
+\subsection{\textcolor{red}{Iterator-Kategorien}}\label{sec:iterator-categories}
+\subsection{\textcolor{red}{Iterator-Operationen}}\label{sec:iterator-operations}
+\section{\textcolor{red}{Ranges}}\label{sec:ranges}
+\section{\textcolor{red}{STL-Algorithmen}}\label{sec:stl-algorithms}
+\subsection{\textcolor{red}{Nicht-modifizierende Sequenzoperationen}}\label{sec:non-modifying-sequence-operations}
+\subsection{\textcolor{red}{Modifizierende Sequenzoperationen}}\label{sec:modifying-sequence-operations}
+\subsection{\textcolor{red}{Partitionierungsoperationen}}\label{sec:partitioning-operations}
+\subsection{\textcolor{red}{Sortieroperationen}}\label{sec:sorting-operations}
+\subsection{\textcolor{red}{Binäre Suchoperationen}}\label{sec:binary-search-operations}
+\subsection{\textcolor{red}{Mengenoperationen}}\label{sec:set-operations}
+\subsection{\textcolor{red}{Heap-Operationen}}\label{sec:heap-operations}
+\subsection{\textcolor{red}{Numerische Operationen}}\label{sec:numeric-operations}
+\section{\textcolor{red}{Funktionale Programmierung}}\label{sec:functional-programming}
+\subsection{\textcolor{red}{Funktoren}}\label{sec:functors}
+\subsection{\textcolor{red}{Funktionsadapter}}\label{sec:function-adapters}
+\subsection{\textcolor{red}{Prädikate}}\label{sec:predicates}
+\section{\textcolor{red}{Utilities}}\label{sec:utilities}
+\subsection{\textcolor{red}{Pair und Tuple}}\label{sec:pair-tuple}
+\subsection{\textcolor{red}{Smart Pointer}}\label{sec:smart-pointers-std}
+\subsection{\textcolor{red}{Optional, Variant, Any}}\label{sec:optional-variant-any}
+\subsection{\textcolor{red}{Chrono}}\label{sec:chrono}
+\subsection{\textcolor{red}{Ratio}}\label{sec:ratio}
+\subsection{\textcolor{red}{Type Traits}}\label{sec:type-traits}
+\section{\textcolor{red}{Reguläre Ausdrücke}}\label{sec:regex}
+\section{\textcolor{red}{Random}}\label{sec:random}
+\section{\textcolor{red}{Lokalisierung}}\label{sec:localization}
+
+\cleardoublepage\chapter{\textcolor{red}{Datei-I/O}}\label{chap:file-io}
+\section{\textcolor{red}{Textdateien}}\label{sec:text-files}
+\section{\textcolor{red}{Binärdateien}}\label{sec:binary-files}
+\section{\textcolor{red}{Streams}}\label{sec:streams}
+\section{\textcolor{red}{Formatierung}}\label{sec:formatting}
+\section{\textcolor{red}{Fehlerbehandlung}}\label{sec:error-handling}
+
+
+\cleardoublepage\chapter{\textcolor{red}{Multithreading und Concurrency}}\label{chap:multithreading}
+\section{\textcolor{red}{Threads}}\label{sec:threads}
+\section{\textcolor{red}{Mutex und Locks}}\label{sec:mutex-locks}
+\section{\textcolor{red}{Condition Variables}}\label{sec:condition-variables}
+\section{\textcolor{red}{Atomic Operations}}\label{sec:atomic-operations}
+\section{\textcolor{red}{Future und Promise}}\label{sec:future-promise}
+\section{\textcolor{red}{Async}}\label{sec:async}
+\section{\textcolor{red}{Thread Pools}}\label{sec:thread-pools}
+\section{\textcolor{red}{Race Conditions}}\label{sec:race-conditions}
+\section{\textcolor{red}{Deadlocks}}\label{sec:deadlocks}
+
+\cleardoublepage\chapter{\textcolor{red}{Build-Systeme und Paketmanagement}}\label{chap:build-systems}
+\section{\textcolor{red}{Makefiles}}\label{sec:makefiles}
+\section{\textcolor{red}{CMake}}\label{sec:cmake}
+\section{\textcolor{red}{Visual Studio Projekte}}\label{sec:vs-projects}
+\section{\textcolor{red}{Bibliotheken einbinden}}\label{sec:including-libraries}
+\section{\textcolor{red}{Paketmanager}}\label{sec:package-managers}
+\subsection{\textcolor{red}{vcpkg}}\label{sec:vcpkg}
+\subsection{\textcolor{red}{Conan}}\label{sec:conan}
+\section{\textcolor{red}{Continuous Integration}}\label{sec:continuous-integration}
+
+\cleardoublepage\chapter{\textcolor{red}{Testen und Best Practices}}\label{chap:testing}
+\section{\textcolor{red}{Unit Tests}}\label{sec:unit-tests}
+\subsection{\textcolor{red}{Google Test}}\label{sec:google-test}
+\subsection{\textcolor{red}{Catch2}}\label{sec:catch2}
+\section{\textcolor{red}{Test-Driven Development}}\label{sec:tdd}
+\section{\textcolor{red}{Code-Reviews}}\label{sec:code-reviews}
+\section{\textcolor{red}{Statische Code-Analyse}}\label{sec:static-code-analysis}
+\section{\textcolor{red}{Coding Standards}}\label{sec:coding-standards}
+\section{\textcolor{red}{Performance-Optimierung}}\label{sec:performance-optimization}
+\section{\textcolor{red}{Debugging-Techniken}}\label{sec:debugging-techniques}
+
+\cleardoublepage\chapter{\textcolor{red}{Fortgeschrittene Themen}}\label{chap:advanced-topics}
+\section{\textcolor{red}{Design Patterns}}\label{sec:design-patterns}
+\subsection{\textcolor{red}{Creational Patterns}}\label{sec:creational-patterns}
+\subsection{\textcolor{red}{Structural Patterns}}\label{sec:structural-patterns}
+\subsection{\textcolor{red}{Behavioral Patterns}}\label{sec:behavioral-patterns}
+\section{\textcolor{red}{Metaprogrammierung}}\label{sec:metaprogramming}
+\section{\textcolor{red}{Reflection}}\label{sec:reflection}
+\section{\textcolor{red}{Speichermodell}}\label{sec:memory-model}
+\section{\textcolor{red}{Compiler-Optimierungen}}\label{sec:compiler-optimizations}
+\section{\textcolor{red}{Interoperabilität mit anderen Sprachen}}\label{sec:interoperability}
+\subsection{\textcolor{red}{C}}\label{sec:interop-c}
+\subsection{\textcolor{red}{Python}}\label{sec:interop-python}
+\subsection{\textcolor{red}{Java}}\label{sec:interop-java}
+\section{\textcolor{red}{Embedded C++}}\label{sec:embedded-cpp}
+\section{\textcolor{red}{Game Development mit C++}}\label{sec:game-development}
